@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_home_logo"
+            android:title="Home"
+        />
+
+        <item
+            android:icon="@drawable/ic_recipes_logo"
+            android:title="Buscar recetas"
+            />
+
+        <item
+            android:icon="@drawable/ic_recipesingredients_logo"
+            android:title="Buscar recetas por ingredientes"
+            />
+
+        <item
+            android:icon="@drawable/ic_favorites_logo"
+            android:title="Tus favoritos"
+            />
+
+        <item
+            android:icon="@drawable/ic_logout_logo"
+            android:title="Salir"
+            />
+
+    </group>
+
+</menu>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="16dp"
+    android:id="@+id/random_list_container"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="200dp"
+            app:cardCornerRadius="16dp"
+            android:layout_margin="4dp"
+            >
+
+        <ImageView
+            android:id="@+id/image_plate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/card_titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingHorizontal="8dp"
+            android:singleLine="true"
+            android:text="Dish Name"
+            android:textColor="#4C4F56"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_semibold"
+        />
+
+        <TextView
+            android:id="@+id/card_summary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:textColorLink="#4C4F56"
+            android:linksClickable="false"
+            android:text="Dish Name"
+            android:ellipsize="end"
+            android:textColor="#4C4F56"
+            android:lineSpacingExtra="4dp"
+            android:textSize="12dp"
+            android:maxLines="2"
+            android:lines="2"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="4dp"
+                    android:src="@drawable/ic_timerecetapp" />
+
+                <TextView
+                    android:id="@+id/recipe_servingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="2 Persons"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"
+                    android:textColor="#8B8989"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_starrecetapp"
+                    android:paddingRight="4dp"/>
+
+                <TextView
+                    android:id="@+id/recipe_likesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Likes"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#8B8989"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="8dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_servingsrecetapp"
+                    android:paddingRight="4dp"/>
+
+                <TextView
+                    android:id="@+id/recipe_timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Persons"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#8B8989"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
