@@ -79,13 +79,13 @@
                 android:paddingLeft="8dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:paddingRight="4dp"
                     android:src="@drawable/ic_timerecetapp" />
 
                 <TextView
-                    android:id="@+id/recipe_servingsText"
+                    android:id="@+id/recipe_timeText"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/poppins_regular"
@@ -94,7 +94,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_gravity="center"
                     android:textColor="#8B8989"
-                    android:textSize="9sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -106,8 +106,8 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:src="@drawable/ic_starrecetapp"
                     android:paddingRight="4dp"/>
 
@@ -120,7 +120,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_regular"
                     android:textColor="#8B8989"
-                    android:textSize="9sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -133,13 +133,13 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:src="@drawable/ic_servingsrecetapp"
                     android:paddingRight="4dp"/>
 
                 <TextView
-                    android:id="@+id/recipe_timeText"
+                    android:id="@+id/recipe_servingsText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2 Persons"
@@ -147,7 +147,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_regular"
                     android:textColor="#8B8989"
-                    android:textSize="9sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 

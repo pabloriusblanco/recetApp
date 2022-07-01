@@ -25,6 +25,8 @@ public class RandomRecipeAdapter extends RecyclerView.Adapter<RandomRecipeViewHo
 
     Context context;
     List<Recipe> recipesList;
+
+    // Listener para obtener los detalles de las recetas similares
     RecipeDetailsClickListener listenerDetails;
 
 
@@ -72,9 +74,10 @@ class RandomRecipeViewHolder extends RecyclerView.ViewHolder {
     TextView card_titleText, card_summary, recipe_likesText, recipe_servingsText, recipe_timeText;
     ImageView image_plate;
 
-
     public RandomRecipeViewHolder(@NonNull View itemView) {
         super(itemView);
+
+        // Inicializar elementos
         random_list_container = itemView.findViewById(R.id.random_list_container);
         card_titleText = itemView.findViewById(R.id.card_titleText);
         card_summary = itemView.findViewById(R.id.card_summary);

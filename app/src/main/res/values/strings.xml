@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">recetApp</string>
-    <string name="api_key">db05e24cfa884548b47142bedfbf3277</string>
+<!--    <string name="api_key">db05e24cfa884548b47142bedfbf3277</string>-->
+    <string name="api_key">fb43d8d12eca40f2b6f3a53051d21737</string>
 
     <!--DRAWER-->
     <string name="drawer_open">Drawer Open</string>

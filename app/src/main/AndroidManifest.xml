@@ -12,13 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecetApp">
         <activity
-            android:name=".DrawerBaseActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ForgotPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ActivitySplash"
+            android:name=".welcome.ActivitySplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,13 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".WelcomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RecipeDetailsActivity"
+            android:name=".welcome.WelcomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

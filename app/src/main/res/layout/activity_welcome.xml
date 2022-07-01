@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity"
+    tools:context=".welcome.WelcomeActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -30,7 +30,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:backgroundTint="#F4F5FA"
-          android:elevation="0dp"
+          android:elevation="5dp"
           app:cardCornerRadius="30dp">
 
         <LinearLayout
@@ -41,6 +41,8 @@
             android:layout_height="wrap_content">
 
           <com.google.android.material.button.MaterialButton
+              android:id="@+id/signIn_button"
+              android:onClick="onButtonLoginClicked"
               android:layout_width="150dp"
               android:layout_height="wrap_content"
               android:backgroundTint="#FFBD30"
@@ -53,22 +55,25 @@
               android:textSize="14sp"
               android:elevation="0dp"
               app:cornerRadius="24dp"
+              style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
               />
-
           <com.google.android.material.button.MaterialButton
+              android:id="@+id/signUp_button"
               android:onClick="onButtonRegisterClicked"
               android:layout_width="150dp"
               android:layout_height="wrap_content"
               android:backgroundTint="@android:color/transparent"
               android:fontFamily="@font/poppins_regular"
-              android:textAllCaps="false"
               android:text="Registrarse"
-              android:layout_marginHorizontal="4dp"
               android:paddingVertical="12dp"
+              android:layout_marginHorizontal="4dp"
+              android:textAllCaps="false"
               android:textColor="#12121F"
               android:textSize="14sp"
+              android:elevation="0dp"
               app:cornerRadius="24dp"
-              android:stateListAnimator="@null"/>
+              style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+              />
         </LinearLayout>
 
 
@@ -77,103 +82,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="50dp"
+        android:id="@+id/welcome_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_marginTop="16dp"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="24dp"
-            app:strokeWidth="2dp"
-            app:strokeColor="#E0E4F5"
-            android:gravity="center"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_height="22dp"
-                android:layout_marginVertical="16dp"
-                android:src="@drawable/ic_email_field_icon"/>
-            <EditText
-                android:id="@+id/email_login_input"
-                android:paddingLeft="64dp"
-                android:paddingRight="16dp"
-                android:paddingVertical="19dp"
-                android:textSize="12dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:hint="Email" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_marginTop="16dp"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="24dp"
-            app:strokeWidth="2dp"
-            app:strokeColor="#E0E4F5"
-            android:gravity="center"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_height="22dp"
-                android:layout_marginVertical="16dp"
-                android:src="@drawable/ic_pass_field_icon"/>
-            <EditText
-                android:id="@+id/password_login_input"
-                android:paddingVertical="19dp"
-                android:textSize="12dp"
-                android:paddingLeft="64dp"
-                android:paddingRight="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:inputType="textPassword"
-                android:hint="Password" />
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <Button
-
-            android:layout_marginTop="50dp"
-            android:id="@+id/button_action_Login"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFBD30"
-            android:fontFamily="@font/poppins_semibold"
-            android:textAllCaps="false"
-            android:text="Ingresar"
-            android:layout_marginHorizontal="4dp"
-            android:paddingVertical="12dp"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:cornerRadius="24dp"
-            android:onClick="onButtonSignInClicked"
-            />
-
-
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/forgot_pass_link"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingRight="8dp"
-        android:layout_marginTop="16dp"
-        android:textSize="12sp"
-        android:fontFamily="@font/poppins_regular"
-        android:textAlignment="center"
-        android:textColor="#12121F"
-        android:text="Olvidé mi contraseña"
-        android:onClick="onButtonForgotPasswordClicked"
-        />
 
 
 </LinearLayout>

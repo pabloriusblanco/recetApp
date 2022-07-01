@@ -4,8 +4,10 @@ import android.content.Context;
 
 import com.example.recetapp.Listeners.RandomRecipeResponseListener;
 import com.example.recetapp.Listeners.RecipeDetailsResponseListener;
+import com.example.recetapp.Listeners.SimilarRecipeListener;
 import com.example.recetapp.models.RandomApiRes;
 import com.example.recetapp.models.RecipeDetailsRes;
+import com.example.recetapp.models.SimilarRecipeResponse;
 
 import java.util.List;
 
@@ -69,6 +71,27 @@ public class RequestManager {
         });
     };
 
+    public void getSimilarRecipes(SimilarRecipeListener listener, int id){
+        CallSimilarRecipes callSimilarRecipes = retrofit.create((CallSimilarRecipes.class));
+        Call<List<SimilarRecipeResponse>> call = callSimilarRecipes.callSimilarRecipe(id, "3", context.getString(R.string.api_key));
+        call.enqueue(new Callback<List<SimilarRecipeResponse>>() {
+            @Override
+            public void onResponse(Call<List<SimilarRecipeResponse>> call, Response<List<SimilarRecipeResponse>> response) {
+                if(!response.isSuccessful()){
+                    listener.didError(response.message());
+                    return;
+                }
+                listener.didFetch(response.body(), response.message());
+            }
+
+            @Override
+            public void onFailure(Call<List<SimilarRecipeResponse>> call, Throwable t) {
+                listener.didError(t.getMessage());
+            }
+        });
+
+    }
+
     //    Usa el model RandomApiRes
     private interface CallRandomRecipes{
         @GET("recipes/random")
@@ -84,6 +107,16 @@ public class RequestManager {
         @GET("recipes/{id}/information")
         Call<RecipeDetailsRes> callRecipeDetails(
                 @Path("id") int id,
+                @Query("apiKey") String apiKey
+        );
+    }
+
+    //  Usa el model SimilarRecipeResponse
+    private interface CallSimilarRecipes{
+        @GET("/recipes/{id}/similar")
+        Call<List<SimilarRecipeResponse>> callSimilarRecipe(
+                @Path("id") int id,
+                @Query("number") String number,
                 @Query("apiKey") String apiKey
         );
     }

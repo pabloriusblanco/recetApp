@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_gradient_splash"
-    tools:context=".ActivitySplash">
+    tools:context=".welcome.ActivitySplash">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -33,15 +33,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                app:contentPaddingRight="16dp"
-                app:contentPaddingLeft="16dp"
-                app:contentPaddingTop="4dp"
-                app:contentPaddingBottom="3dp"
                 app:cardBackgroundColor="@android:color/transparent"
-                app:cardElevation="0dp"
                 app:cardCornerRadius="16dp"
-                app:strokeWidth="2dp"
-                app:strokeColor="#fff">
+                app:cardElevation="0dp"
+                app:contentPaddingBottom="3dp"
+                app:contentPaddingLeft="16dp"
+                app:contentPaddingRight="16dp"
+                app:contentPaddingTop="4dp"
+                app:strokeColor="#fff"
+                app:strokeWidth="3dp">
 
                 <TextView
                     android:layout_width="wrap_content"

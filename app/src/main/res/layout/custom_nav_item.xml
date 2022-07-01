@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/browser_actions_context_menu_max_width"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/navdrawer_logout_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="#12121F"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_round_keyboard_arrow_left_24"/>
+
+
+</LinearLayout>
+
+<com.google.android.material.button.MaterialButton
+    style="?android:attr/borderlessButtonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/white"
+    android:elevation="0dp"
+    app:cornerRadius="15dp"
+    app:elevation="0dp" />
+
+</RelativeLayout>

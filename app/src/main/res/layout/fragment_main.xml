@@ -3,20 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".fragments.home.MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="20dp"
-        android:paddingTop="30dp"
-        android:paddingBottom="8dp"
-        android:singleLine="true"
-        android:text="Recetas recomendadas!"
-        android:textColor="#4C4F56"
-        android:textSize="20sp"
-        android:fontFamily="@font/poppins_semibold"
-        />
+        android:layout_height="match_parent"
+        android:background="#F5F6FA"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:text="Recetas recomendadas!"
+                android:textColor="#4C4F56"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_randomRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="50dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="40dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_gradient"
+            android:visibility="visible" />
+
+
+
+    </RelativeLayout>
 
 </FrameLayout>

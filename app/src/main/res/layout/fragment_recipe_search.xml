@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".fragments.home.MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F6FA"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/recipesSearch_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="sentences"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="20dp"
+                android:text="Ingrese el nombre de un plato o ingredientes separados por coma!"
+                android:textAlignment="center"
+                android:textColor="#4C4F56"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/recipesSearch_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="8dp"
+                android:text="Ejemplo plato: risotto\nEjemplo ingrediente: rice, chicken"
+                android:textAlignment="center"
+                android:textColor="#5A6274"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/recipesSearch_SearchLogo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_search_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/recipesSearch_NotFoundLogo"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_not_found"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_searchRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="40dp"
+            android:paddingTop="60dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/gradient_searchRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ic_gradient"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

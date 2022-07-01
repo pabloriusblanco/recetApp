@@ -10,255 +10,256 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
 
-            <RelativeLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+<!--            <RelativeLayout-->
+<!--                xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:lay=""-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/ic_bannertop" />
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/ic_bannertop" />-->
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_logowhite" />
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="65dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/ic_logowhite" />-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
 
-            <RelativeLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_marginTop="-25dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal">
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardElevation="0dp"
-                    app:cardCornerRadius="16dp"
-                    app:strokeWidth="2dp"
-                    app:strokeColor="#FDC64E">
-                    <androidx.appcompat.widget.SearchView
-                        android:id="@+id/SearchView_home"
-                        app:queryHint="Buscar recetas..."
-                        app:iconifiedByDefault="false"
-                        app:theme="@style/Theme.SearchBar"
-                        app:searchIcon="@drawable/ic_searchrecetapp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
-                </com.google.android.material.card.MaterialCardView>
-            </RelativeLayout>
+<!--            <RelativeLayout-->
+<!--                xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_marginTop="-25dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_horizontal">-->
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardElevation="0dp"-->
+<!--                    app:cardCornerRadius="16dp"-->
+<!--                    app:strokeWidth="2dp"-->
+<!--                    app:strokeColor="#FDC64E">-->
+<!--                    <androidx.appcompat.widget.SearchView-->
+<!--                        android:id="@+id/SearchView_home"-->
+<!--                        app:queryHint="Buscar recetas..."-->
+<!--                        app:iconifiedByDefault="false"-->
+<!--                        app:theme="@style/Theme.SearchBar"-->
+<!--                        app:searchIcon="@drawable/ic_searchrecetapp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        />-->
+<!--                </com.google.android.material.card.MaterialCardView>-->
+<!--            </RelativeLayout>-->
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/white"
-                app:cardElevation="4dp"
-                app:cardCornerRadius="16dp"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="16dp"
-                >
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardBackgroundColor="@color/white"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                android:layout_marginHorizontal="16dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                >-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    >
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:singleLine="true"
-                            android:text="Recipe Name"
-                            android:textColor="#4C4F56"
-                            android:textSize="18dp"
-                            android:layout_weight="8"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:id="@+id/detail_titleCard"
-                            />
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp"-->
+<!--                    >-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:orientation="horizontal">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:text="Recipe Name"-->
+<!--                            android:textColor="#4C4F56"-->
+<!--                            android:textSize="18dp"-->
+<!--                            android:layout_weight="8"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:id="@+id/detail_titleCard"-->
+<!--                            />-->
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
 
-                            android:src="@drawable/ic_starlike_outline" />
+<!--                            android:src="@drawable/ic_starlike_outline" />-->
 
-                    </LinearLayout>
-
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_height="200dp"
-                        app:cardCornerRadius="16dp"
-                        android:layout_marginVertical="8dp"
-                        android:layout_marginHorizontal="4dp"
-                        >
-
-                        <ImageView
-                            android:id="@+id/detail_imagePlate"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:scaleType="centerCrop"/>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="16dp">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="left"
-                            android:orientation="horizontal"
-                            android:paddingLeft="8dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:paddingRight="4dp"
-                                android:src="@drawable/ic_timerecetapp" />
-
-                            <TextView
-                                android:id="@+id/detail_timeText"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:fontFamily="@font/poppins_regular"
-                                android:gravity="center"
-                                android:text="2 Persons"
-                                android:layout_marginTop="1dp"
-                                android:layout_gravity="center"
-                                android:textColor="#8B8989"
-                                android:textSize="9sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/ic_starrecetapp"
-                                android:paddingRight="4dp"/>
-
-                            <TextView
-                                android:id="@+id/detail_likesText"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="2 Likes"
-                                android:layout_marginTop="1dp"
-                                android:layout_gravity="center"
-                                android:fontFamily="@font/poppins_regular"
-                                android:textColor="#8B8989"
-                                android:textSize="9sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingRight="8dp"
-                            android:gravity="right"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/ic_servingsrecetapp"
-                                android:paddingRight="4dp"/>
-
-                            <TextView
-                                android:id="@+id/detail_servingsText"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="2 Persons"
-                                android:layout_marginTop="1dp"
-                                android:layout_gravity="center"
-                                android:fontFamily="@font/poppins_regular"
-                                android:textColor="#8B8989"
-                                android:textSize="9sp" />
-
-                        </LinearLayout>
+<!--                    </LinearLayout>-->
 
 
-                    </LinearLayout>
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                        android:layout_height="200dp"-->
+<!--                        app:cardCornerRadius="16dp"-->
+<!--                        android:layout_marginVertical="8dp"-->
+<!--                        android:layout_marginHorizontal="4dp"-->
+<!--                        >-->
 
-                    <TextView
-                        android:id="@+id/detail_summaryText"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="8dp"
-                        android:textColorLink="#4C4F56"
-                        android:linksClickable="false"
-                        android:text="Recipe Summary"
-                        android:textColor="#5A6274"
-                        android:lineSpacingExtra="4dp"
-                        android:textSize="12dp"
-                        android:fontFamily="@font/poppins_regular"
-                    />
+<!--                        <ImageView-->
+<!--                            android:id="@+id/detail_imagePlate"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:scaleType="centerCrop"/>-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="8dp"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:paddingRight="4dp"
-                            android:src="@drawable/ic_circle_subtitle" />
+<!--                    </androidx.cardview.widget.CardView>-->
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:singleLine="true"
-                            android:text="Ingredientes"
-                            android:textColor="#4C4F56"
-                            android:textSize="16dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            />
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginBottom="16dp">-->
 
-                    </LinearLayout>
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="left"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:paddingLeft="8dp">-->
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/details_ingredientsColumns"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="8dp"
-                    />
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:paddingRight="4dp"-->
+<!--                                android:src="@drawable/ic_timerecetapp" />-->
 
-                </LinearLayout>
+<!--                            <TextView-->
+<!--                                android:id="@+id/detail_timeText"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:fontFamily="@font/poppins_regular"-->
+<!--                                android:gravity="center"-->
+<!--                                android:text="2 Persons"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:textColor="#8B8989"-->
+<!--                                android:textSize="9sp" />-->
 
-            </androidx.cardview.widget.CardView>
+<!--                        </LinearLayout>-->
 
-        </LinearLayout>
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:src="@drawable/ic_starrecetapp"-->
+<!--                                android:paddingRight="4dp"/>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/detail_likesText"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="2 Likes"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:fontFamily="@font/poppins_regular"-->
+<!--                                android:textColor="#8B8989"-->
+<!--                                android:textSize="9sp" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:paddingRight="8dp"-->
+<!--                            android:gravity="right"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:src="@drawable/ic_servingsrecetapp"-->
+<!--                                android:paddingRight="4dp"/>-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/detail_servingsText"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="2 Persons"-->
+<!--                                android:layout_marginTop="1dp"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:fontFamily="@font/poppins_regular"-->
+<!--                                android:textColor="#8B8989"-->
+<!--                                android:textSize="9sp" />-->
+
+<!--                        </LinearLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/detail_summaryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:padding="8dp"-->
+<!--                        android:textColorLink="#4C4F56"-->
+<!--                        android:linksClickable="false"-->
+<!--                        android:text="Recipe Summary"-->
+<!--                        android:textColor="#5A6274"-->
+<!--                        android:lineSpacingExtra="4dp"-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                    />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:padding="8dp"-->
+<!--                        android:orientation="horizontal">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:paddingRight="4dp"-->
+<!--                            android:src="@drawable/ic_circle_subtitle" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:text="Ingredientes"-->
+<!--                            android:textColor="#4C4F56"-->
+<!--                            android:textSize="16dp"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:id="@+id/details_ingredientsColumns"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:padding="8dp"-->
+<!--                    />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--        </LinearLayout>-->
     </ScrollView>
 </LinearLayout>

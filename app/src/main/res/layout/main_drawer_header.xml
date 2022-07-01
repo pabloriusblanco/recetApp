@@ -2,40 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="50dp"
+    android:padding="25dp"
+    android:layout_marginTop="60dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:isScrollContainer="true"
     android:orientation="vertical">
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:backgroundTint="#F4F5FA"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        app:icon="@drawable/ic_closemenu_icon"
-        app:iconTint="#8B8989"
-        app:iconGravity="textStart"
-        app:cornerRadius="12dp"
-        app:iconPadding="0dp" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:backgroundTint="#F4F5FA"-->
+<!--        android:insetLeft="0dp"-->
+<!--        android:insetTop="0dp"-->
+<!--        android:insetRight="0dp"-->
+<!--        android:insetBottom="0dp"-->
+<!--        app:icon="@drawable/ic_closemenu_icon"-->
+<!--        app:iconTint="#8B8989"-->
+<!--        app:iconGravity="textStart"-->
+<!--        app:cornerRadius="12dp"-->
+<!--        app:iconPadding="0dp" />-->
 
     <TextView
+        android:id="@+id/menu_userName_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="User Name"
+        android:text=""
         android:textAllCaps="false"
         android:textColor="#0F0B03"
         android:textSize="18sp"/>
 
     <TextView
+        android:id="@+id/menu_userMail_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_regular"
-        android:text="useremail@example.com"
+        android:text=""
         android:textAllCaps="false"
         android:textColor="#8B8989"
         android:textSize="12sp"/>
