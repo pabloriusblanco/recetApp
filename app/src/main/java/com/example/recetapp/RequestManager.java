@@ -1,11 +1,15 @@
 package com.example.recetapp;
 
 import android.content.Context;
+import android.util.Log;
 
+import com.example.recetapp.Listeners.FavoriteRecipeResponseListener;
 import com.example.recetapp.Listeners.RandomRecipeResponseListener;
 import com.example.recetapp.Listeners.RecipeDetailsResponseListener;
 import com.example.recetapp.Listeners.SimilarRecipeListener;
+import com.example.recetapp.models.FavoriteApiRes;
 import com.example.recetapp.models.RandomApiRes;
+import com.example.recetapp.models.Recipe;
 import com.example.recetapp.models.RecipeDetailsRes;
 import com.example.recetapp.models.SimilarRecipeResponse;
 
@@ -46,6 +50,28 @@ public class RequestManager {
 
             @Override
             public void onFailure(Call<RandomApiRes> call, Throwable t) {
+                listener.didError(t.getMessage());
+            }
+        });
+    };
+
+    public void getFavoriteRecipes(FavoriteRecipeResponseListener listener, String ids){
+        CallFavoriteRecipes request = retrofit.create(CallFavoriteRecipes.class);
+        Call<List<Recipe>> call = request.callFavoriteRecipes(context.getString(R.string.api_key), ids);
+        call.enqueue(new Callback<List<Recipe>>() {
+            @Override
+            public void onResponse(Call<List<Recipe>> call, Response<List<Recipe>> response) {
+                if(!response.isSuccessful()){
+                    listener.didError(response.message());
+                    return;
+                }
+                Log.d("*--RESPONSE--*",response.body().toString());
+                listener.didFetch(response.body(), response.message());
+            }
+
+            @Override
+            public void onFailure(Call<List<Recipe>> call, Throwable t) {
+                Log.e("Error",t.getMessage());
                 listener.didError(t.getMessage());
             }
         });
@@ -118,6 +144,15 @@ public class RequestManager {
                 @Path("id") int id,
                 @Query("number") String number,
                 @Query("apiKey") String apiKey
+        );
+    }
+
+    //  Usa el model FavoriteRecipeResponse
+    private interface CallFavoriteRecipes{
+        @GET("recipes/informationBulk")
+        Call<List<Recipe>> callFavoriteRecipes(
+                @Query("apiKey") String apiKey,
+                @Query("ids") String ids
         );
     }
 }

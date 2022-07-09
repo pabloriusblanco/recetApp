@@ -22,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.recetapp.fragments.home.MainFragment;
+import com.example.recetapp.fragments.home.RecipeFavorites;
 import com.example.recetapp.fragments.home.RecipeSearchFragment;
 import com.example.recetapp.welcome.WelcomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -188,6 +189,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_item_recipes:
                 fragment = RecipeSearchFragment.newInstance();
+                break;
+            case R.id.nav_item_favorites:
+                fragment = RecipeFavorites.newInstance();
                 break;
             case R.id.nav_item_logout:
                 drawerLayout.closeDrawer(GravityCompat.START);

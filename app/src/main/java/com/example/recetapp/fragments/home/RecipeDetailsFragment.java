@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -198,20 +199,34 @@ public class RecipeDetailsFragment extends Fragment {
         // Obtener el objeto de preferencias
         SharedPreferences pref = getContext().getSharedPreferences("favorites", Context.MODE_PRIVATE);
 
+        // Si no hay items en el shared preferences pone like
+//        if (pref.getStringSet("favorites", new HashSet<String>()) == null){
+//            // Lo agrega a favoritos
+//            Set<String> favoriteSingle = new HashSet<String>();
+//            favoriteSingle.add(String.valueOf(id));
+//            like_button.setImageResource(R.drawable.ic_starlike_filled);
+//            favorite = true;
+//            animateLike();
+//            Toast.makeText(getContext(), "Se quitó en favoritos", Toast.LENGTH_LONG).show();
+//        }
+//        else{
+//
+//        }
+
         // Crear un editor
         SharedPreferences.Editor editor = pref.edit();
 
         // Obtener la lista de strings de preferencias
-        Set<String> favoritesList = new HashSet<String>(pref.getStringSet("favorites",null));
+        Set<String> favoritesList = new HashSet<String>(pref.getStringSet("favorites",new HashSet<String>()));
 
-
-        if (!isFavorite){
+        if (!isFavorite || favoritesList.size() == 0){
             // Lo agrega a favoritos
             favoritesList.add(String.valueOf(id));
             like_button.setImageResource(R.drawable.ic_starlike_filled);
             favorite = true;
             animateLike();
-            Toast.makeText(getContext(), "Se quitó en favoritos", Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(), "Se guardó en favoritos", Toast.LENGTH_LONG).show();
+
         }
         else{
             // Si ya es favorito, lo remueve
@@ -219,12 +234,13 @@ public class RecipeDetailsFragment extends Fragment {
             like_button.setImageResource(R.drawable.ic_starlike_outline);
             favorite = false;
             animateLike();
-            Toast.makeText(getContext(), "Se guardó en favoritos", Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(), "Se quitó en favoritos", Toast.LENGTH_LONG).show();
         }
 
         // Put de la nueva lista
         editor.putStringSet("favorites", favoritesList);
         editor.apply();
+        Log.d("lista", pref.getStringSet("favorites",new HashSet<String>()).toString());
     }
 
     private void animateLike(){

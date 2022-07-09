@@ -41,11 +41,13 @@
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/content_layout.xml" value="0.22" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/custom_nav_item.xml" value="0.2" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/dialog.xml" value="0.5" />
+        <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/favorites_recipes.xml" value="0.2731006160164271" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_forgot_pass.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_main.xml" value="0.25" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_recipe_details.xml" value="0.33" />
+        <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_recipe_favorites.xml" value="0.2" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_recipe_search.xml" value="0.22" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_recipes_search_ingredients.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Pablo/AndroidStudioProjects/recetApp2/app/src/main/res/layout/fragment_sign_in.xml" value="0.22" />
